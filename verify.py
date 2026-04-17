@@ -23,7 +23,7 @@ bot = telebot.TeleBot(API_TOKEN)
 
 def get_user_ip_info():
     try:
-        r = requests.get('https://ipapi.co/json/', timeout=10).json()
+        r = requests.get('http://ip-api.com/json/', timeout=10).json()
         return r
     except:
         return None
